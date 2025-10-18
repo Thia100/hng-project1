@@ -1,0 +1,89 @@
+
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+main {
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+article {
+  max-width: 650px;
+  width: 100%;
+  margin: 10px auto 0 auto;
+  background: pink;
+  border-radius: 12px;
+}
+.profile-header {
+  position: relative;
+  background: red;
+  width: 100%;
+  padding: 100px;
+  margin-bottom: 100px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.profile-header img {
+  position: absolute;
+  bottom: -70px;
+  left: 20px;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+.profile-card-content {
+  padding: 20px 10px;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h2 + p {
+  font-size: 1rem;
+}
+.time {
+  margin-top: 30px;
+  background: red;
+  padding: 20px 10px;
+  border-radius: 12px;
+}
+.bio,
+.connect,
+.hobbies,
+.dislike {
+  margin-top: 30px;
+}
+.connect ul,
+.hobbies ul,
+.dislike ul {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.connect a {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.connect a:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.connect a:focus {
+  background: green;
+}
+.connect a i {
+  color: #000;
+  transition: 0.3s;
+}

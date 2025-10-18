@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Fathia Diekola Gbolahan" />
+    <meta
+      name="description"
+      content="Professional profile card showcasing developer bio, social links, hobbies, and interests. Fully responsive design with semantic HTML and accessibility features."
+    />
+    <title>HNG Project1 | Fathia Diekola Gbolahan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles/css-reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/main-lg.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card">
+        <div class="profile-header">
+          <figure>
+            <img
+              src="avatar.png"
+              alt="Fathia Gbolahan's avatar"
+              data-testid="test-user-avatar"
+              width="222"
+              height="222"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
+        <div class="profile-card-content">
+          <h2 data-testid="test-user-name">Fathia Gbolahan</h2>
+          <p>Frontend Developer</p>
+          <div data-testid="test-user-time" id="time" class="time"></div>
+
+          <div class="bio">
+            <h3>Bio</h3>
+            <p data-testid="test-user-bio">
+              Passionate about creating beautiful digital experiences. Love to
+              blend creativity with technology to build innovative solutions
+              that make a difference.
+            </p>
+          </div>
+
+          <nav class="connect">
+            <h3>Connect</h3>
+            <ul data-testid="test-user-social-links">
+              <li>
+                <a
+                  aria-label="link to user's twitter"
+                  rel="noopener noreferrer"
+                  href="https://x.com/thia_wip"
+                  target="_blank"
+                  data-testid="test-user-social-twitter"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                aria-label="link to user's instagram"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/thia_wip/"
+                  target="_blank"
+                  data-testid="test-user-social-instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                aria-label="link to user's github"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Thia100"
+                  target="_blank"
+                  data-testid="test-user-social-github"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                aria-label="link to user's LinkedIn"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/fathia-gbolahan"
+                  target="_blank"
+                  data-testid="test-user-social-linkedin"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="hobbies" data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Music</li>
+              <li>Photography</li>
+              <li>Reading</li>
+              <li>Writing</li>
+              <li>Coding</li>
+            </ul>
+          </section>
+
+          <section class="dislike" data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Bugs in code</li>
+              <li>Loud chewing</li>
+              <li>Traffic jams</li>
+              <li>Slow websites</li>
+              <li>Heat</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer></footer>
+  </body>
+</html>
