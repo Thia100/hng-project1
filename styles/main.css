@@ -7,6 +7,7 @@ li {
 main {
   padding: 0 10px;
   font-family: "Roboto", sans-serif;
+  color: #343a40;
 }
 article {
   max-width: 650px;
@@ -42,7 +43,7 @@ h2 {
   font-size: 1.8rem;
 }
 h2 + p {
-  font-size: 1rem;
+  color: #343a40;
 }
 .time {
   margin-top: 30px;
@@ -84,10 +85,12 @@ h2 + p {
   transform: translateY(-0.25rem);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.connect a:focus, .connect ul li:nth-child(2n) a:focus {
-  background: #E7C6FF;
+.connect a:focus,
+.connect ul li:nth-child(2n) a:focus {
+  background: #e7c6ff;
 }
 .connect a i {
   color: #fff;
   transition: 0.3s;
+  font-size: 1.3rem;
 }
