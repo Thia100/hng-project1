@@ -1,13 +1,18 @@
-a {
-  text-decoration: none;
-}
 li {
   list-style: none;
 }
+body {
+  background: linear-gradient(135deg, #f5f7fa 20%, #c3cfe2 80%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 main {
-  padding: 0 10px;
+  padding: 20px 10px;
   font-family: "Roboto", sans-serif;
   color: #343a40;
+  width: 100%;
 }
 article {
   max-width: 650px;
@@ -34,7 +39,7 @@ article {
   width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 1px solid #eeecec;
+  border: 2px solid #eeecec;
 }
 .profile-card-content {
   padding: 20px 10px;
@@ -52,6 +57,7 @@ h2 + p {
   color: #fff;
   padding: 20px 10px;
   border-radius: 12px;
+  word-break: break-all;
 }
 .bio,
 .connect,
@@ -68,7 +74,23 @@ h2 + p {
   gap: 10px;
   flex-wrap: wrap;
 }
+.hobbies ul li,
+.dislike ul li {
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #343a40;
+  font-size: .9rem;
+}
+.hobbies ul li {
+  background: #c6f6d5; 
+  color: #22543d;
+}
+.dislike ul li {
+  background: #fed7d7; 
+  color: #742a2a;
+}
 .connect a {
+  text-decoration: none;
   background-color: #b8c0ff;
   display: flex;
   align-items: center;
@@ -88,6 +110,8 @@ h2 + p {
 .connect a:focus,
 .connect ul li:nth-child(2n) a:focus {
   background: #e7c6ff;
+  outline: 2px solid #343a40;
+  outline-offset: 2px;
 }
 .connect a i {
   color: #fff;
