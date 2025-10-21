@@ -79,14 +79,14 @@ h2 + p {
   padding: 8px 16px;
   border-radius: 20px;
   color: #343a40;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .hobbies ul li {
-  background: #c6f6d5; 
+  background: #c6f6d5;
   color: #22543d;
 }
 .dislike ul li {
-  background: #fed7d7; 
+  background: #fed7d7;
   color: #742a2a;
 }
 .connect a {
@@ -103,7 +103,8 @@ h2 + p {
 .connect ul li:nth-child(2n) a {
   background-color: #bbd0ff;
 }
-.connect a:hover {
+.connect a:hover,
+.page-nav a:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -117,4 +118,30 @@ h2 + p {
   color: #fff;
   transition: 0.3s;
   font-size: 1.3rem;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 30px;
+}
+.page-nav a:nth-child(1) {
+  text-decoration: none;
+  background: #b8c0ff;
+  padding: 8px 10px;
+  border-radius: 14px;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #8e8c8c;
+}
+.page-nav a:last-child {
+  background: #ffd6ff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 14px;
+  color: #343a40;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #8e8c8c;
 }

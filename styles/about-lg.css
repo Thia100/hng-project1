@@ -1,0 +1,30 @@
+@media screen and (min-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "bio bio"
+      "goals confidence"
+      "note thoughts";
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bio {
+    grid-area: bio;
+  }
+  .goals {
+    grid-area: goals;
+  }
+  .low-confidence {
+    grid-area: confidence;
+  }
+  .note-to-future {
+    grid-area: note;
+  }
+  .thoughts {
+    grid-area: thoughts;
+  }
+}
