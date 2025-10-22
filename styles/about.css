@@ -9,10 +9,7 @@ body {
   line-height: 1.6;
   background-color: var(--bg-color);
   color: var(--text-color);
-  margin: 0;
-  padding: 0;
 }
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -23,7 +20,6 @@ body {
   color: #fff;
   min-height: 40vh;
   margin-bottom: 40px;
-  text-align: center;
   animation: fadeDown 1s ease;
 }
 .page-nav a {
